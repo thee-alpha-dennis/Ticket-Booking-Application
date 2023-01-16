@@ -10,7 +10,6 @@ class HotelScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return Container(
-        
       decoration: BoxDecoration(
           color: Styles.primaryColor,
           borderRadius: BorderRadius.circular(20),
@@ -22,11 +21,10 @@ class HotelScreen extends StatelessWidget {
       margin: const EdgeInsets.only(right: 17, top: 5),
       width: size.width * 0.6,
       child: Column(children: [
-        
-        Container(crossAxisAlignment:CrossAxisAlignment.start,
+        Container(
           padding: EdgeInsets.only(left: 2),
           height: 180,
-          decoration: BoxzzzzzDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             color: Styles.primaryColor,
             image: const DecorationImage(
