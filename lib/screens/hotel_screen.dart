@@ -25,7 +25,7 @@ class HotelScreen extends StatelessWidget {
           padding: EdgeInsets.only(left: 2),
           height: 180,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(14),
             color: Styles.primaryColor,
             image: const DecorationImage(
               image: AssetImage("assets/images/one.png"),
