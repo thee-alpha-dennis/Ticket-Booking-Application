@@ -5,6 +5,8 @@ import 'package:ticket_booking/screens/hotel_screen.dart';
 import 'package:ticket_booking/screens/ticket_view.dart';
 import 'package:ticket_booking/utils/app_styles.dart';
 
+import '../utils/info_list.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -125,13 +127,9 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.only(left: 20),
               child: Row(
-                children: [
-                  HotelScreen(),
-                  HotelScreen(),
-                  HotelScreen(),
-                  HotelScreen(),
-                  HotelScreen(),
-                ],
+                children: hotelList
+                    .map((singlehotel) => HotelScreen(hotels: singlehotel))
+                    .toList(),
               )),
         ],
       ),
