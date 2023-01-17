@@ -20,7 +20,7 @@ class HotelScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 15, vertical: 17),
       margin: const EdgeInsets.only(right: 17, top: 5),
       width: size.width * 0.6,
-      child: Column(children: [
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Container(
           padding: EdgeInsets.only(left: 2),
           height: 180,
