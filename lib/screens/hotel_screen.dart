@@ -12,7 +12,7 @@ class HotelScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           color: Styles.primaryColor,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(21),
           boxShadow: [
             BoxShadow(
                 color: Colors.grey.shade100, blurRadius: 2, spreadRadius: 1),
