@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 import 'package:ticket_booking/screens/hotel_screen.dart';
 import 'package:ticket_booking/screens/ticket_view.dart';
 import 'package:ticket_booking/utils/app_styles.dart';
+import 'package:ticket_booking/widgets/view_all.dart';
 
 import '../utils/info_list.dart';
 
@@ -68,24 +69,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Upcoming Shows',
-                      style: Styles.headLineStyle2,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        print('Tapped');
-                      },
-                      child: Text(
-                        'View All',
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    )
-                  ],
+                ViewAll(
+                  bigText: 'Upcoming Flights',
+                  smallText: 'View All',
                 ),
               ],
             ),
@@ -104,27 +90,11 @@ class HomeScreen extends StatelessWidget {
           ),
           Gap(15),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              children: [
-                Text(
-                  'Hotels',
-                  style: Styles.headLineStyle2,
-                ),
-                Spacer(),
-                InkWell(
-                  onTap: () {
-                    print('Tapped');
-                  },
-                  child: Text(
-                    'View All',
-                    style:
-                        Styles.textStyle.copyWith(color: Styles.primaryColor),
-                  ),
-                ),
-              ],
-            ),
-          ),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: ViewAll(
+                bigText: 'Hotels',
+                smallText: 'View All',
+              )),
           Gap(15),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
