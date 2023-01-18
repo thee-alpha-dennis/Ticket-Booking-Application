@@ -36,17 +36,17 @@ class HotelScreen extends StatelessWidget {
         ),
         Gap(5),
         Text(
-          'Open Space',
+          "${hotels['place']}",
           style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor),
         ),
         Gap(5),
         Text(
-          'London',
+          "${hotels['destination']}",
           style: Styles.headLineStyle3.copyWith(color: Colors.white),
         ),
         Gap(5),
         Text(
-          '\$40/night',
+          "\$${hotels['price']}/night",
           style: Styles.headLineStyle1.copyWith(color: Styles.kakiColor),
         ),
       ]),
